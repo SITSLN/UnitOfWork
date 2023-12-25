@@ -12,9 +12,8 @@ namespace Arch.EntityFrameworkCore.UnitOfWork.Host.Models
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.EnableAutoHistory(null);
+        protected override void OnModelCreating(ModelBuilder modelBuilder){
+            
         }
     }
 
